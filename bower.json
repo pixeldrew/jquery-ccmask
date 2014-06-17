@@ -1,0 +1,29 @@
+{
+  "name": "jquery-ccmask",
+  "version": "0.0.1",
+  "homepage": "https://github.com/pixeldrew/jquery-ccmask",
+  "authors": [
+    "Drew Foehn <drew@pixelburn.net>"
+  ],
+  "description": "Credit Card Masking Plugin for jQuery",
+  "main": "dist/ccmask.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "jquery",
+    "masking",
+    "creditcard",
+    "cc",
+    "validation",
+    "input"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

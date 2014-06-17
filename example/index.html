@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery-ccmask</title>
+</head>
+<body>
+Example jquery-ccmask (This example won't work in IE8 due to using jQuery 2.1.11 but should work with an older version of jQuery or the migrate package)
+
+<form>
+    <input type="text" name="input" required
+           placeholder="Masked Credit Card" data-rule-credit-card autocomplete="off">
+
+    <input type="submit" class="button" value="Submit">
+</form>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.11/require.min.js"></script>
+<script>
+    require.config({
+        paths: {
+            'jquery': '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery'
+        }
+    });
+
+    // doesn't need to use require can be just added to the page via a regular script block
+    // after jquery
+    require(['jquery', './../dist/ccmask.min'], function($) {
+        $('input[data-rule-credit-card]').ccmask();
+    });
+</script>
+</body>
+</html>

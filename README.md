@@ -1,4 +1,4 @@
 jquery-ccmask
 =============
 
-Credit Card Mask Plugin for jQuery
+Simiple Credit Card Masking Plugin for jQuery
