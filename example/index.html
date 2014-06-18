@@ -5,11 +5,22 @@
     <title>jquery-ccmask</title>
 </head>
 <body>
-Example jquery-ccmask (This example won't work in IE8 due to using jQuery 2.1.11 but should work with an older version of jQuery or the migrate package)
+Example jquery-ccmask (This example won't work in IE8 due to using jQuery 2.1.11 but should work with an older version
+of jQuery or the migrate package)
 
 <form>
-    <input type="text" name="input" required
-           placeholder="Masked Credit Card" data-rule-credit-card autocomplete="off">
+    <label>On Blur Example</label>
+        <input type="text" name="onblur" required
+               placeholder="Masked Credit Card" data-blur-credit-card autocomplete="off">
+
+
+    <input type="submit" class="button" value="Submit">
+</form>
+
+<form>
+    <label>On KeyUp Example</label>
+        <input type="text" name="onkeyp" required
+               placeholder="Masked Credit Card on" data-keyup-credit-card autocomplete="off">
 
     <input type="submit" class="button" value="Submit">
 </form>
@@ -24,8 +35,9 @@ Example jquery-ccmask (This example won't work in IE8 due to using jQuery 2.1.11
 
     // doesn't need to use require can be just added to the page via a regular script block
     // after jquery
-    require(['jquery', './../dist/jquery.ccmask.min'], function($) {
-        $('input[data-rule-credit-card]').ccmask();
+    require(['jquery', './../src/jquery.ccmask'], function($) {
+        $('input[data-blur-credit-card]').ccmask();
+        $('input[data-keyup-credit-card]').ccmask({keyup:true});
     });
 </script>
 </body>
