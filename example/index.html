@@ -3,27 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <title>jquery-ccmask</title>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap-theme.min.css"/>
 </head>
 <body>
-Example jquery-ccmask (This example won't work in IE8 due to using jQuery 2.1.11 but should work with an older version
-of jQuery or the migrate package)
 
-<form>
-    <label>On Blur Example</label>
-        <input type="text" name="onblur" required
-               placeholder="Masked Credit Card" data-blur-credit-card autocomplete="off">
+<a href="https://github.com/pixeldrew/jquery-ccmask">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+         src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"
+         alt="Fork me on GitHub"
+         data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+</a>
+
+<div id="content">
+    <div class="container">
+
+        <h1>jquery-ccmask</h1>
+
+        <p>(This example won't work in IE8 due to using jQuery 2.1.11 but should work with an older
+        version of jQuery or the migrate package)</p>
+
+        <form role="form" style="width:200px">
+            <div class="form-group">
+                <label for="onblur">On Blur Example</label>
+                <input class="form-control" type="text" id="onblur" name="onblur"
+                       placeholder="Masked Credit Card" data-blur-credit-card autocomplete="off">
+            </div>
+
+            <div class="form-group">
+                <label for="onkeyup">On KeyUp Example</label>
+                <input class="form-control" type="text" id="onkeyup" name="onkeyup"
+                       placeholder="Masked Credit Card on" data-keyup-credit-card autocomplete="off">
+            </div>
+        </form>
+
+        <h5>Code</h5>
+        <pre>
+&lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;onblur&quot; name=&quot;onblur&quot; placeholder=&quot;Masked Credit Card&quot; data-blur-credit-card autocomplete=&quot;off&quot;&gt;
+&lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;onkeyup&quot; name=&quot;onkeyup&quot; placeholder=&quot;Masked Credit Card on&quot; data-keyup-credit-card autocomplete=&quot;off&quot;&gt;
+&lt;script&gt;
+$(&quot;input[data-blur-credit-card]&quot;).ccmask();
+$(&quot;input[data-keyup-credit-card]&quot;).ccmask({keyup: true});
+&lt;/script&gt;</pre>
+
+        <footer>
+        <h5>Licensed under MIT</h5>
+        <p>&copy; 2014 Drew Foehn</p>
+        </footer>
+    </div>
+</div>
 
 
-    <input type="submit" class="button" value="Submit">
-</form>
 
-<form>
-    <label>On KeyUp Example</label>
-        <input type="text" name="onkeyp" required
-               placeholder="Masked Credit Card on" data-keyup-credit-card autocomplete="off">
 
-    <input type="submit" class="button" value="Submit">
-</form>
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.11/require.min.js"></script>
 <script>
@@ -37,7 +70,7 @@ of jQuery or the migrate package)
     // after jquery
     require(['jquery', './../src/jquery.ccmask'], function($) {
         $('input[data-blur-credit-card]').ccmask();
-        $('input[data-keyup-credit-card]').ccmask({keyup:true});
+        $('input[data-keyup-credit-card]').ccmask({keyup: true});
     });
 </script>
 </body>
