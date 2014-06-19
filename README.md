@@ -11,6 +11,11 @@ $('input.ccmask-blur').ccmask();
 // masks input on keyup
 $('input.ccmask-keyup').ccmask({keyup:true});
 ```
+
+### Demo
+
+A demo is located here http://pixeldrew.github.io/plugins/jquery-ccmask/example/
+
 ### Features
 
 - Extends jQuery.valHooks so $.val always returns the unmasked value
