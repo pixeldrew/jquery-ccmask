@@ -25,6 +25,17 @@ A demo is located at http://pixeldrew.github.io/plugins/jquery-ccmask/example/
 
 Note: If masking is set to keyup, caret position is handled by the plugin and will always be at the end of the input.
 
+### Installation
+
+Bower is the easiest way to install this plugin
+
+```sh
+$ bower install jquery-ccmask
+```
+
+Or, include the minified file jquery.ccmask.min.js inside of the dist/ directory in your page. As this plugin is also defined
+as an AMD you can also use require.js to load the plugin.
+
 ### License
 
 Copyright (c) 2014, Drew Foehn. (MIT License)
