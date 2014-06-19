@@ -14,7 +14,7 @@ $('input.ccmask-keyup').ccmask({keyup:true});
 
 ### Demo
 
-A demo is located here http://pixeldrew.github.io/plugins/jquery-ccmask/example/
+A demo is located at http://pixeldrew.github.io/plugins/jquery-ccmask/example/
 
 ### Features
 
