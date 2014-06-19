@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Jquery-ccmask by pixeldrew</title>
@@ -11,56 +11,95 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
+</head>
+<body>
+<div class="wrapper">
+    <header>
         <h1>Jquery-ccmask</h1>
+
         <p>Credit Card Mask Plugin for jQuery</p>
 
-        <p class="view"><a href="https://github.com/pixeldrew/jquery-ccmask">View the Project on GitHub <small>pixeldrew/jquery-ccmask</small></a></p>
+        <p class="view"><a href="https://github.com/pixeldrew/jquery-ccmask">View the Project on GitHub
+            <small>pixeldrew/jquery-ccmask</small>
+        </a></p>
 
 
         <ul>
-          <li><a href="https://github.com/pixeldrew/jquery-ccmask/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/pixeldrew/jquery-ccmask/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/pixeldrew/jquery-ccmask">View On <strong>GitHub</strong></a></li>
+            <li><a href="https://github.com/pixeldrew/jquery-ccmask/archive/v0.1.2.zip">Download <strong>ZIP
+                File</strong></a></li>
+            <li><a href="https://github.com/pixeldrew/jquery-ccmask/archive/v0.1.2.tar.gz">Download <strong>TAR
+                Ball</strong></a></li>
+            <li><a href="https://github.com/pixeldrew/jquery-ccmask">View On <strong>GitHub</strong></a></li>
         </ul>
-      </header>
-      <section>
-<h2>
-<a name="simple-credit-card-masking-plugin-for-jquery" class="anchor" href="#simple-credit-card-masking-plugin-for-jquery"><span class="octicon octicon-link"></span></a>Simple Credit Card Mask Plugin for jQuery</h2>
+    </header>
+    <section>
+        <h2>
+            <a name="simple-credit-card-masking-plugin-for-jquery" class="anchor"
+               href="#simple-credit-card-masking-plugin-for-jquery"><span class="octicon octicon-link"></span></a>Simple
+            Credit Card Mask Plugin for jQuery</h2>
 
-<p>This plugin has two ways of masking input, either on keyup or blur. By default the input will mask the users input on blur.</p>
+        <p>This plugin has two ways of masking input, either on keyup or blur. By default the input will mask the users
+            input on blur.</p>
 
-<div class="highlight highlight-js"><pre><span class="c1">// masks input on blur</span>
-<span class="nx">$</span><span class="p">(</span><span class="s1">'input.ccmask-blur'</span><span class="p">).</span><span class="nx">ccmask</span><span class="p">();</span>
+        <div class="highlight highlight-js"><pre><span class="c1">// masks input on blur</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'input.ccmask-blur'</span><span
+                    class="p">).</span><span class="nx">ccmask</span><span class="p">();</span>
 
 <span class="c1">// masks input on keyup</span>
-<span class="nx">$</span><span class="p">(</span><span class="s1">'input.ccmask-keyup'</span><span class="p">).</span><span class="nx">ccmask</span><span class="p">({</span><span class="nx">keyup</span><span class="o">:</span><span class="kc">true</span><span class="p">});</span>
-</pre></div>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'input.ccmask-keyup'</span><span
+                    class="p">).</span><span class="nx">ccmask</span><span class="p">({</span><span
+                    class="nx">keyup</span><span class="o">:</span><span class="kc">true</span><span
+                    class="p">});</span>
+</pre>
+        </div>
 
-<h3>
-<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h3>
+        <h3><a name="installation" class="anchor" href="#example"><span class="octicon octicon-link"></span></a>Demo</h3>
 
-<ul>
-<li>Extends jQuery.valHooks so $.val always returns the unmasked value</li>
-<li>Unmasks value on form submit (Plugin won't unmask if jquery plugin validation is used and value fails <a href="http://jqueryvalidation.org/documentation/">http://jqueryvalidation.org/documentation/</a>)</li>
-<li>Will not interfere with plugin jQuery placeholder fallback <a href="https://github.com/mathiasbynens/jquery-placeholder">https://github.com/mathiasbynens/jquery-placeholder</a>.</li>
-</ul><p>Note: If masking is set to keyup caret position is handled by the plugin and will always be at the end of the input.</p>
+        <p>A demo is located <a href="/plugins/cc-mask/example/">here</a></p>
 
-<h3>
-<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h3>
+        <h3>
+            <a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features
+        </h3>
 
-<p>Copyright (c) 2014, Drew Foehn. (MIT License)
-See LICENSE for more info.</p>
-      </section>
-      <footer>
+        <ul>
+            <li>Extends jQuery.valHooks so $.val always returns the unmasked value</li>
+            <li>Unmasks value on form submit (Plugin won't unmask if jquery plugin validation is used and value fails <a
+                    href="http://jqueryvalidation.org/documentation/">http://jqueryvalidation.org/documentation/</a>)
+            </li>
+            <li>Will not interfere with plugin jQuery placeholder fallback <a
+                    href="https://github.com/mathiasbynens/jquery-placeholder">https://github.com/mathiasbynens/jquery-placeholder</a>.
+            </li>
+        </ul>
+        <p>Note: If masking is set to keyup caret position is handled by the plugin and will always be at the end of the
+            input.</p>
+
+        <h3>
+            <a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation
+        </h3>
+
+        <p>Bower is the easiest way to install this plugin</p>
+
+        <div class="highlight highlight-sh">
+            <pre>$bower install jquery-ccmask</pre></div>
+
+        <p>Or download the tarball and include the minified file jquery.ccmask.min.js inside of the dist/ directory in your page</p>
+
+        <h3>
+            <a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h3>
+
+        <p>Copyright (c) 2014, Drew Foehn. (MIT License)
+            See LICENSE for more info.</p>
+    </section>
+    <footer>
         <p>This project is maintained by <a href="https://github.com/pixeldrew">pixeldrew</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+
+        <p>
+            <small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a>
+            </small>
+        </p>
+    </footer>
+</div>
+<script src="javascripts/scale.fix.js"></script>
+
+</body>
 </html>
