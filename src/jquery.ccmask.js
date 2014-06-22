@@ -236,6 +236,17 @@
 
         focus: function() {
             $(this).prop('value', $(this).data('unmaskedValue'));
+        },
+        submit: function(e) {
+            var ele = e.data.ccmask;
+
+            if($(this).data('validator')) {
+                if(!$(this).data('validator').element(ele)) {
+                    return false;
+                }
+            }
+
+            $(this).prop('value', $(this).data('unmaskedValue'));
         }
     };
 
