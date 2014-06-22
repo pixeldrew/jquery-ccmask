@@ -246,7 +246,7 @@
                 }
             }
 
-            $(this).prop('value', $(this).data('unmaskedValue'));
+            $(ele).prop('value', $(ele).data('unmaskedValue'));
         }
     };
 
@@ -314,7 +314,7 @@
                 }
             }
 
-            $(this).prop('value', $(this).data('unmaskedValue'));
+            $(ele).prop('value', $(ele).data('unmaskedValue'));
         }
 
     };
