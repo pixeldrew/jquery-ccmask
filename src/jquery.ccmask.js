@@ -227,10 +227,12 @@
         },
 
         blur: function(e) {
-            var value = $(this).data('unmaskedValue');
+            var value = $(this).data('unmaskedValue'),
+                maskedValue = format(mask(value), getCardFormat(value));
 
             if(!$(this).hasClass('placeholder')) {
-                $(this).prop('value', format(mask(value), getCardFormat(value)));
+                $(this).prop('value', maskedValue);
+                $(this).data('maskedValue' , maskedValue);
             }
         },
 
@@ -283,7 +285,6 @@
 
         },
         keyup: function() {
-            console.log('keyup')
             if(this.value === '') {
                 $(this).val('');
             }
